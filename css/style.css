@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background: #f5f5f5;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.header {
+    background: #424242;
+    height: 300px;
+}
+
+.left {
+    float: left;
+    width: 33%;
+    height: 100%;
+    background: url(../images/BMICLogoYellow.png) no-repeat center center;
+    background-size: auto 40%;
+}
+
+.center {
+    float: left;
+    width: 33%;
+    height: 100%;
+
+}
+
+.data {
+    padding: 50px 0;
+}
+
+.center label,
+.center [type="text"] {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 2.0rem;
+}
+
+.center label {
+    color: #FFD366;
+}
+
+.center [type='text'] {
+    border: 2px solid #FFD366;
+}
+
+.right {
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+
+#resultBtn {
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 180px;
+    height: 180px;
+    margin-top: 15%;
+    margin-left: 20%;
+    background: #FFD366;
+    font-size: 45px;
+    font-family: 微軟正黑體;
+}
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    color: #333;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 3.0rem;
+}
+
+.bmiHistory {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.bmiList {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+}
+
+.bmiList li {
+    float: right;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.bmiList a {
+    font-size: 2.0rem;
+    text-decoration: none;
+}
+
+.bmiList li div {
+    display: inline-block;
+    background: #FFF;
+    /*width: 10%;*/
+    height: 100%;
+    font-size: 2.0rem;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 0 15px;
+}
+
+#bmiBlue {
+    border-left: blue 7px solid;
+}
+
+#bmiGreen {
+    border-left: #86D73e 7px solid;
+}
+
+#bmiOrange {
+    border-left: #FF982D 7px solid;
+}
+
+#bmiOrangedeep {
+    border-left: #FF6C02 7px solid;
+}
+
+#bmiRed {
+    border-left: red 7px solid;
+}
+
+.bmiclass {
+    font-size: 1.0rem;
+}
+
+#blue {
+    color: blue;
+}
+
+#green {
+    color: #86D73e;
+}
+
+#orange {
+    color: #FF982D;
+}
+
+#orangedeep {
+    color: #FF6C02;
+}
+
+#red {
+    color: red;
+}
+
+.footer {
+    background: #FFD366 url('../images/BMICLogo.png') no-repeat center center;
+    background-size: auto 80%;
+    padding: 12px 0;
+    height: 50px;
+    /* 設定footer絕對位置在底部 */
+    position: fixed;
+    bottom: 0;
+    /* 展開footer寬度 */
+    width: 100%;
+}

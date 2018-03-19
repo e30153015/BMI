@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMI計算器</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="left"></div>
+            <div class="center">
+                <div class="data">
+                    <label>身高 cm</label>
+                    <input type="text" placeholder="請輸入身高" id='userHeight'>
+                    <label>體重 kg</label>
+                    <input type="text" placeholder="請輸入體重" id='userWeight'>
+                </div>
+            </div>
+            <div class="right">
+                <input type="button" value='看結果' id="resultBtn">
+            </div>
+        </div>
+        <div class="section">
+            <h2>BMI紀錄</h2>
+            <div class="bmiHistory">
+                <ul class="bmiList"></ul>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
