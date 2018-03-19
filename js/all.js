@@ -20,17 +20,22 @@ updateList(data);
 
 function addList(e) {
     e.preventDefault();
-    var userHeight = document.querySelector('#userHeight').value;
-    var userWeight = document.querySelector('#userWeight').value;
-    var userData = {
-        BMI: (userWeight / ((userHeight / 100) * (userHeight / 100))).toFixed(2),
-        height: userHeight,
-        weight: userWeight
+    if (userHeightInput.value && userWeightInput) {
+        var userHeight = document.querySelector('#userHeight').value;
+        var userWeight = document.querySelector('#userWeight').value;
+        var userData = {
+            BMI: (userWeight / ((userHeight / 100) * (userHeight / 100))).toFixed(2),
+            height: userHeight,
+            weight: userWeight
+        }
+        data.push(userData);
+        updateList(data);
+        localStorage.setItem('bmiData', JSON.stringify(data))
+    } else {
+        alert('您尚未輸入資料！！');
     }
-    data.push(userData);
-    updateList(data);
-    localStorage.setItem('bmiData', JSON.stringify(data))
 }
+
 
 function updateList(items) {
     str = '';
