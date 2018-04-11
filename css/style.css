@@ -23,14 +23,15 @@ html {
 .left {
     float: left;
     width: 33%;
+    margin-right: 6.5%;
     height: 100%;
     background: url(../images/BMICLogoYellow.png) no-repeat center center;
-    background-size: auto 40%;
+    background-size: auto 60%;
 }
 
 .center {
     float: left;
-    width: 33%;
+    width: 30.5%;
     height: 100%;
 
 }
@@ -56,7 +57,7 @@ html {
 
 .right {
     float: left;
-    width: 33%;
+    width: 30%;
     height: 100%;
 }
 
